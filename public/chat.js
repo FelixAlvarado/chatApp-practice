@@ -23,9 +23,10 @@ btn.addEventListener('click', function(){
   });
   // Listen for events
 socket.on('chat', function(data){
+    feedback.innerHTML = "";
     output.innerHTML += '<p><strong>' + data.handle + ': </strong>' + data.message + '</p>';
 });
 
 socket.on('typing', (data) =>{
-    feedback.innerHTML = '<p><em>' + data + 'is typing...</em></p>';
+    feedback.innerHTML = '<p><em>' + data + ' is typing...</em></p>';
 });
