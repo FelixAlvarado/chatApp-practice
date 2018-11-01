@@ -3,7 +3,7 @@ const app = express();
 const socket = require('socket.io');
 
 
-
+//can open up debugger panle and set breakpoints and check variables all on vs code
 
 
 let server = app.listen(3000, () => console.log('listening on 3000'));
